@@ -26,7 +26,7 @@ function convertMs(ms) {
   const seconds = addLeadingZero(Math.floor((((ms % day) % hour) % minute) / second));
 
   return { days, hours, minutes, seconds };
-  }
+};
 
 const options = {
   enableTime: true,
@@ -48,7 +48,6 @@ const options = {
   },
 };
 
-
 const fp = flatpickr(timerForm, options);
 
 function countdownTimer() {
@@ -63,7 +62,7 @@ timerForm.removeAttribute("disabled");
   timerHours.textContent = hours;
   timerMinutes.textContent = minutes;
   timerSeconds.textContent = seconds;
-}
+};
 
 btn.addEventListener("click", setTimer);
  
@@ -76,6 +75,6 @@ function setTimer(event) {
 else {
   timerId = setInterval(countdownTimer, 1000);
   } 
-  };
+};
 
 

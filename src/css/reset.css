@@ -176,7 +176,7 @@ form button:hover {
 }
 
 label {
-  display: contents;
+  display: flex;
   align-items: center;
   flex-direction: row;
 }
